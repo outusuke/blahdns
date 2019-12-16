@@ -1,0 +1,27 @@
+# Updated on Oct 25, 2019
+server_names = ['blahdns-fi-dnscrypt-v4','blahdns-fi-dnscrypt-v6']
+listen_addresses = ['127.0.0.1:53', '[::1]:53']
+max_clients = 250
+force_tcp = false
+timeout = 2000
+keepalive = 30
+
+# Load-balancing strategy: 'p2' (default), 'ph', 'fastest' or 'random'
+lb_strategy = 'p2'
+fallback_resolver = '9.9.9.9:53'
+ignore_system_dns = false
+netprobe_timeout = 30
+cache = true
+cache_size = 512
+cache_min_ttl = 90
+cache_max_ttl = 1800
+cache_neg_min_ttl = 2
+cache_neg_max_ttl = 6
+
+[static]
+[static.'blahdns-fi-dnscrypt-v4']
+stamp = 'sdns://AQMAAAAAAAAAEzk1LjIxNi4yMTIuMTc3Ojg0NDMgU4ToFEMUKT5W3RsUCh7xcq1HvboXmciVcpSVPQNOtccbMi5kbnNjcnlwdC1jZXJ0LmJsYWhkbnMuY29t'
+[static.'blahdns-fi-dnscrypt-v6']
+stamp = 'sdns://AQMAAAAAAAAAHFsyYTAxOjRmOTpjMDEwOjQzY2U6OjFdOjg0NDMgU4ToFEMUKT5W3RsUCh7xcq1HvboXmciVcpSVPQNOtccbMi5kbnNjcnlwdC1jZXJ0LmJsYWhkbnMuY29t'
+
+
