@@ -1,5 +1,5 @@
 # Updated on Oct 25, 2019
-server_names = ['blahdns-fi-dnscrypt-v4','blahdns-fi-dnscrypt-v6']
+server_names = ['cloudflare-v4','cloudflare-v6']
 listen_addresses = ['127.0.0.1:53', '[::1]:53']
 max_clients = 250
 force_tcp = false
@@ -24,4 +24,12 @@ stamp = 'sdns://AQMAAAAAAAAAEzk1LjIxNi4yMTIuMTc3Ojg0NDMgU4ToFEMUKT5W3RsUCh7xcq1H
 [static.'blahdns-fi-dnscrypt-v6']
 stamp = 'sdns://AQMAAAAAAAAAHFsyYTAxOjRmOTpjMDEwOjQzY2U6OjFdOjg0NDMgU4ToFEMUKT5W3RsUCh7xcq1HvboXmciVcpSVPQNOtccbMi5kbnNjcnlwdC1jZXJ0LmJsYWhkbnMuY29t'
 
+[static.'adguard']
+stamp = 'sdns://AQIAAAAAAAAAFDE3Ni4xMDMuMTMwLjEzMDo1NDQzINErR_JS3PLCu_iZEIbq95zkSV2LFsigxDIuUso_OQhzIjIuZG5zY3J5cHQuZGVmYXVsdC5uczEuYWRndWFyZC5jb20'
+
+[static.'cloudflare-v4']
+stamp = 'sdns://AgcAAAAAAAAABzEuMC4wLjGgENk8mGSlIfMGXMOlIlCcKvq7AVgcrZxtjon911-ep0cg63Ul-I8NlFj4GplQGb_TTLiczclX57DvMV8Q-JdjgRgSZG5zLmNsb3VkZmxhcmUuY29tCi9kbnMtcXVlcnk'
+
+[static.'cloudflare-v6']
+stamp = 'sdns://AgcAAAAAAAAAGVsyNjA2OjQ3MDA6NDcwMDo6MTExMV06NTOgENk8mGSlIfMGXMOlIlCcKvq7AVgcrZxtjon911-ep0cg63Ul-I8NlFj4GplQGb_TTLiczclX57DvMV8Q-JdjgRgSZG5zLmNsb3VkZmxhcmUuY29tCi9kbnMtcXVlcnk'
 
